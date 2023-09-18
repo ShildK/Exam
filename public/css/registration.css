@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Merriweather+Sans&family=Montserrat:wght@400;500;600;700&family=Open+Sans&family=Pacifico&family=Roboto:ital@0;1&family=Work+Sans:wght@300;400&display=swap');
+body {
+  font-family: 'Merriweather', serif;
+  background-color: rgba(238, 238, 238, 0.902);
+  overflow: hidden;
+}
+body .wrap {
+  width: 900px;
+  height: 600px;
+  margin: 50px auto 0;
+  border-radius: 10px;
+  padding: 30px;
+  overflow: hidden;
+  background-color: rgb(232, 232, 231);
+}
+body .wrap .img__one {
+  position: relative;
+  width: 480px;
+  left: 630px;
+  top: -220px;
+  z-index: 1;
+  overflow: hidden;
+}
+body .wrap .img__two {
+  position: relative;
+  width: 290px;
+  left: -570px;
+  top: 240px;
+  z-index: 1;
+  overflow: hidden;
+}
+body .wrap .container {
+  position: relative;
+  z-index: 2;
+  top: -490px;
+  background-color: white;
+  width: 800px;
+  height: 550px;
+  margin: 30px auto 0;
+  border-radius: 10px;
+  display: flex;
+  align-items: none;
+  justify-content: none;
+  flex-direction: none;
+}
+body .wrap .container .container__left {
+  border-radius: 10px 0 0 10px;
+  background-image: url(../img/sky.jpg);
+  width: 350px;
+  height: 550px;
+  margin: none;
+  border-radius: none;
+}
+body .wrap .container .container__left .title {
+  font-size: 32px;
+  color: white;
+  text-align: center;
+  letter-spacing: 0.2px;
+  font-weight: 600;
+  margin: 180px 0 20px 0;
+}
+body .wrap .container .container__left .subtitle {
+  font-size: 14px;
+  width: 290px;
+  color: white;
+  text-align: center;
+  letter-spacing: 0.2px;
+  font-weight: 300;
+  margin: 30px 0 40px 30px;
+}
+body .wrap .container .container__left .authorization {
+  width: 110px;
+  height: 30px;
+  margin: 0 120px;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+}
+body .wrap .container .container__left .authorization:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  transition: 0.2s;
+}
+body .wrap .container .container__rigth {
+  width: 450px;
+  height: 550px;
+  margin: none;
+  border-radius: none;
+}
+body .wrap .container .container__rigth .title {
+  font-size: 32px;
+  color: rgb(7, 187, 236);
+  text-align: center;
+  letter-spacing: 0.2px;
+  font-weight: 600;
+  margin-top: 90px;
+}
+body .wrap .container .container__rigth .form input {
+  background-color: rgba(187, 187, 187, 0.885);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 250px;
+  height: 30px;
+  margin: 0 auto 10px;
+  border-radius: 5px;
+  padding: 0 0 0 15px;
+}
+body .wrap .container .container__rigth .form input::placeholder {
+  color: white;
+}
+body .wrap .container .container__rigth .form .message {
+  font-size: 12px;
+  height: 25px;
+  color: red;
+  text-align: end;
+  letter-spacing: 0.2px;
+  font-weight: 400;
+  margin: 10px 90px 0 0;
+}
+body .wrap .container .container__rigth .form .registrationBtn {
+  width: 160px;
+  height: 30px;
+  margin: 20px 145px;
+  border-radius: 25px;
+  background-color: rgb(7, 187, 236);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+body .wrap .container .container__rigth .form .registrationBtn:hover {
+  background-color: rgb(13, 153, 192);
+  transition: 0.2s;
+}
+
+/*# sourceMappingURL=registration.css.map */

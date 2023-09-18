@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Merriweather+Sans&family=Montserrat:wght@400;500;600;700&family=Open+Sans&family=Pacifico&family=Roboto:ital@0;1&family=Work+Sans:wght@300;400&display=swap');
+body {
+  font-family: 'Merriweather', serif;
+  background-color: rgba(238, 238, 238, 0.902);
+  overflow: hidden;
+}
+body .wrap {
+  width: 900px;
+  height: 600px;
+  margin: 50px auto 0;
+  border-radius: 10px;
+  padding: 30px;
+  overflow: hidden;
+  background-color: rgb(232, 232, 231);
+}
+body .wrap .img__one {
+  position: relative;
+  width: 480px;
+  left: 630px;
+  top: -220px;
+  z-index: 1;
+  overflow: hidden;
+}
+body .wrap .img__two {
+  position: relative;
+  width: 290px;
+  left: -570px;
+  top: 240px;
+  z-index: 1;
+  overflow: hidden;
+}
+body .wrap .container {
+  position: relative;
+  z-index: 2;
+  top: -490px;
+  background-color: white;
+  width: 800px;
+  height: 550px;
+  margin: 30px auto 0;
+  border-radius: 10px;
+  display: flex;
+  align-items: none;
+  justify-content: none;
+  flex-direction: none;
+}
+body .wrap .container .container__left {
+  width: 450px;
+  height: 550px;
+  margin: none;
+  border-radius: none;
+}
+body .wrap .container .container__left .title {
+  font-size: 32px;
+  color: rgb(7, 187, 236);
+  text-align: center;
+  letter-spacing: 0.2px;
+  font-weight: 600;
+  margin: 120px 0 40px 0;
+}
+body .wrap .container .container__left .form input {
+  background-color: rgba(187, 187, 187, 0.885);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 250px;
+  height: 30px;
+  margin: 10px auto 15px;
+  border-radius: 5px;
+  padding: 0 0 0 15px;
+}
+body .wrap .container .container__left .form input::placeholder {
+  color: white;
+}
+body .wrap .container .container__left .form .message {
+  font-size: 12px;
+  color: red;
+  text-align: end;
+  letter-spacing: 0.2px;
+  font-weight: 400;
+  margin: 10px 90px 0 0;
+  height: 25px;
+}
+body .wrap .container .container__left .form .authorizationBtn {
+  width: 120px;
+  height: 30px;
+  margin: 40px 165px;
+  border-radius: 25px;
+  background-color: rgb(7, 187, 236);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+body .wrap .container .container__left .form .authorizationBtn:hover {
+  background-color: rgb(13, 153, 192);
+  transition: 0.2s;
+}
+body .wrap .container .container__rigth {
+  width: 350px;
+  height: 550px;
+  margin: none;
+  border-radius: none;
+  background-image: url(../img/sky.jpg);
+  border-radius: 0 10px 10px 0;
+}
+body .wrap .container .container__rigth .title {
+  font-size: 28px;
+  color: white;
+  text-align: center;
+  letter-spacing: 0.2px;
+  font-weight: 600;
+  margin: 180px 0 20px 0;
+}
+body .wrap .container .container__rigth .subtitle {
+  font-size: 14px;
+  color: white;
+  text-align: center;
+  letter-spacing: 0.2px;
+  font-weight: 300;
+  width: 300px;
+  margin: 30px 0 40px 25px;
+}
+body .wrap .container .container__rigth .registrationBtn {
+  width: 160px;
+  height: 30px;
+  margin: 0 95px;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+}
+body .wrap .container .container__rigth .registrationBtn:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  transition: 0.2s;
+}
+
+/*# sourceMappingURL=authorization.css.map */

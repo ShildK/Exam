@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&family=Lobster&family=Merriweather&family=Merriweather+Sans&family=Montserrat:wght@400;500;600;700&family=Open+Sans&family=Pacifico&family=Roboto:ital@0;1&family=Work+Sans:wght@300;400&display=swap');
+
+body {
+    background: rgba(238, 238, 238, 0.902);
+    font-family: 'Comfortaa', cursive;
+    margin-bottom: 100px;
+}
+
+.main {
+    width: 1200px;
+    margin: 30px auto 100px;
+    padding-bottom: 100px;
+    position: relative;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title {
+    font-size: 34px;
+    color: rgb(40, 42, 52);
+    letter-spacing: 1px;
+}
+.lod__out{
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 600;
+    background-color: rgb(89, 191, 222);
+    border: 1px solid rgb(193, 223, 239);
+    color: rgb(238, 238, 238);
+    cursor: pointer;
+}
+.lod__out:hover{
+    background-color: rgb(57, 90, 108);
+    transition: 0.2s;
+}
+.rear__unit {
+    width: 700px;
+    height: 450px;
+    margin: -20px auto;
+    background-color: rgb(40, 42, 52);
+    border-radius: 5px;
+    box-shadow: 2px 5px 15px 2px rgb(75, 108, 113);
+}
+
+.subtitle {
+    color: white;
+    font-size: 28px;
+    letter-spacing: 0.5px;
+    padding: 15px;
+    margin: 10px 0 -2px 15px;
+}
+
+.input__add__note {
+    background-color: rgb(78, 82, 102);
+    border: none;
+    width: 230px;
+    height: 30px;
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-left: 30px;
+    color: white;
+    font-family: 'Comfortaa', cursive;
+}
+
+.input__add__note::placeholder {
+    color: rgb(235, 234, 234);
+}
+
+.add {
+    width: 100px;
+    height: 32px;
+    background-color: rgb(235, 234, 234);
+    border-radius: 5px;
+    border: none;
+    font-family: 'Comfortaa', cursive;
+}
+.add:hover{
+    background-color: rgb(106, 151, 176);
+    transition: 0.2s;
+}
+
+.message {
+    font-size: 12px;
+    height: 28px;
+    margin: 2px 0 20px 55px;
+    color: rgb(149, 48, 48);
+}
+
+.front__unit {
+    position: absolute;
+    width: 730px;
+    min-height: 450px;
+    margin: 10px auto;
+    background-color: rgb(234, 234, 234);
+    border-radius: 5px;
+    top: 190px;
+    left: 290px;
+    z-index: 2;
+    box-shadow: 2px 2px 15px 0px rgb(119, 161, 167);
+    padding-bottom: 30px;
+    margin-bottom: 100px;
+}
+
+.line {
+    border-radius: 5px 5px 0 0;
+    height: 80px;
+    margin-top: -20px;
+    background: url(../img/sky.jpg);
+}
+
+.text {
+    color: white;
+    padding: 12px;
+}
+
+.container {
+    margin: 20px 0 30px 5px;
+}
+.new__note{
+    width: 655px;
+    height: 40px;
+    display: flex;
+    border-radius: 5px;
+    box-shadow: 2px 2px 15px 0px rgb(141, 182, 195);
+    margin: 0 0 10px 30px;
+}
+.new__note__text{
+    background-color: rgb(89, 191, 222);
+    border: 1px solid rgb(193, 223, 239);
+    color: rgb(238, 238, 238);
+    border-radius: 5px;
+    width: 330px;
+    height: 25px;
+    margin: 5px 5px 5px 10px;
+    padding-left: 10px;
+    font-weight: 600;
+    font-family: 'Comfortaa', cursive;
+}
+
+.note__btn__delete{
+    background-color: rgb(89, 191, 222);
+    width: 100px;
+    height: 27px;
+    border-radius: 5px;
+    border: 1px solid rgb(193, 223, 239);
+    margin: 5px 0 0 10px;
+    color: rgb(238, 238, 238);
+    font-weight: 600;
+    font-family: 'Comfortaa', cursive;
+}
+.note__btn__delete:hover{
+    background-color: rgb(106, 151, 176);
+    transition: 0.2s;
+}
+.note__btn__update{
+    background-color: rgb(89, 191, 222);
+    width: 100px;
+    height: 27px;
+    border-radius: 5px;
+    border: 1px solid rgb(193, 223, 239);
+    margin: 5px 0 0 75px;
+    color: rgb(238, 238, 238);
+    font-weight: 600;
+    font-family: 'Comfortaa', cursive;
+}
+.note__btn__update:hover{
+    background-color: rgb(106, 151, 176);
+    transition: 0.2s;
+}
+.img__one{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    left: 700px;
+    top: -20px;
+}
+.img__two{
+    position: absolute;
+    width: 230px;
+    height: 230px;
+    left: -10px;
+    top: 320px;
+}
+.img__three{
+    position: absolute;
+    width: 270px;
+    height: 270px;
+    left: 900px;
+    top: 500px;
+    transform: rotate(75deg);
+}
+.modal__window{
+    width: 250px;
+    height: 130px;
+    position: absolute;
+    top: 10px;
+    left: 950px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 2px 5px 15px 0px rgb(194, 192, 184);
+}
+.modal__window__none{
+    display: none;
+}
+.question__about__logout{
+    text-align: center;
+    margin-top: 30px;
+}
+.button__wrap{
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.btn__logout{
+    width: 60px;
+    height: 25px;
+    background-color: rgb(89, 191, 222);
+    border: 1px solid rgb(193, 223, 239);
+    color: rgb(238, 238, 238);
+    border-radius: 5px;
+    margin: 0 10px 0 40px;
+}
+.btn__logout:hover{
+    background-color: rgb(106, 151, 176);
+    transition: 0.2s;
+}
+.btn__cansel{
+    width: 60px;
+    height: 25px;
+    background-color: rgb(89, 191, 222);
+    border: 1px solid rgb(193, 223, 239);
+    color: rgb(238, 238, 238);
+    border-radius: 5px;
+    
+}
+.btn__cansel:hover{
+    background-color: rgb(106, 151, 176);
+    transition: 0.2s;
+}

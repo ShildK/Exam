@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&family=Lobster&family=Merriweather&family=Merriweather+Sans&family=Montserrat:wght@400;500;600;700&family=Open+Sans&family=Pacifico&family=Roboto:ital@0;1&family=Work+Sans:wght@300;400&display=swap');
+
+.block{
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 2px 5px 10px 0px rgb(170, 170, 170);
+    margin: 100px auto;
+    background-image: url(../img/sky.jpg);
+}
+.message{
+    text-align: center;
+    color: white;
+    font-family: 'Comfortaa', cursive;
+    padding: 150px 0 0 0;
+}
+.text{
+    text-align: center;
+    color: white;
+    font-family: 'Comfortaa', cursive;
+    margin-top: 50px;
+}
+.link{
+    color: rgb(25, 99, 167);
+    /* text-decoration: none; */
+    font-weight: 900;
+}

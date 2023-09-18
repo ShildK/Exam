@@ -1,0 +1,103 @@
+$color_one: rgb(7, 187, 236)
+$color_two: white
+$color_three: red
+
+@mixin flex($df, $ai, $jc, $fd)
+    display: $df
+    align-items: $ai
+    justify-content: $jc
+    flex-direction: $fd
+
+@mixin square($w, $h, $m, $br)
+    width: $w
+    height: $h
+    margin: $m
+    border-radius: $br
+
+@mixin text($px, $col, $ta, $ls, $fw)
+    font-size: $px
+    color: $col
+    text-align: $ta
+    letter-spacing: $ls
+    font-weight: $fw
+
+body
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    background-color: rgba(238, 238, 238, 0.902)
+    overflow: hidden
+
+    .wrap
+        @include square(900px, 600px, 50px auto 0, 10px)
+        padding: 30px
+        overflow: hidden
+        background-color: rgb(232, 232, 231)
+        .img__one
+            position: relative
+            width: 480px
+            left: 630px
+            top: -220px
+            z-index: 1
+            overflow: hidden
+
+        .img__two
+            position: relative
+            width: 290px
+            left: -570px
+            top: 240px
+            z-index: 1
+            overflow: hidden
+
+    
+        .container
+            position: relative
+            z-index: 2
+            top: -490px
+            background-color: $color_two
+            @include square(800px, 550px, 30px auto 0, 10px)
+            @include flex(flex, none, none, none)
+            .container__left
+                border-radius: 10px 0 0 10px
+                background-image: url(../img/sky.jpg)
+                @include square(350px, 550px, none, none)
+                .title
+                    @include text(32px, $color_two, center, 0.2px, 600)
+                    margin: 180px 0 20px 0
+                .subtitle
+                    @include text(14px, $color_two, center, 0.2px, 300)
+                    margin: 30px 0 40px 0
+                .authorization
+                    @include square(110px, 30px, 0 120px, 25px)
+                    background-color: rgba(255, 255, 255, 0.1)
+                    border: 1px solid $color_two
+                    color: $color_two
+                    cursor: pointer
+                .authorization:hover
+                    background-color: rgba(255, 255, 255, 0.4)
+                    transition: 0.2s
+
+            .container__rigth
+                @include square(450px, 550px, none, none)
+                .title
+                    @include text(32px, $color_one, center, 0.2px, 600)
+                    margin-top: 90px
+                .form
+                    input
+                        background-color: rgba(187, 187, 187, 0.885)
+                        border: none
+                        @include flex(flex, center, center, column)
+                        @include square(250px, 30px, 0 auto 10px, 5px)
+                        padding: 0 0 0 15px
+                    input::placeholder
+                        color: $color_two
+                    .message
+                        @include text(12px, $color_three, end, 0.2px, 400)
+                        margin: 10px 90px 0 0
+                    .registrationBtn
+                        @include square(160px, 30px, 20px 145px, 25px)
+                        background-color: $color_one
+                        color: $color_two
+                        border: none
+                        cursor: pointer
+                    .registrationBtn:hover
+                        background-color: rgb(13, 153, 192)
+                        transition: 0.2s
